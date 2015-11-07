@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: flywithme
+  host: flywithme
+  disk_quota: 1024M
+  services:
+  - flywithme-cloudantNoSQLDB
+  - Personality Insights-9j
+  command: node app.js
