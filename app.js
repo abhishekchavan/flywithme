@@ -90,7 +90,26 @@ function initDBConnection() {
 
 initDBConnection();
 
+var corsFilter = function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers',
+        'Origin, X-Requested-With, Content-Type, Accept');
+
+    // intercept OPTIONS method
+    if ('OPTIONS' == req.method) {
+        res.send(200);
+    } else {
+        next();
+    }
+};
+
+app.use('/', corsFilter);
+
 app.get('/', routes.index);
+
+app.get('/personality', function(req, res, next) {
+    res.render('abc.html');
+});
 
 function createResponseData(id, name, value, attachments) {
 
@@ -405,7 +424,7 @@ app.get('/api/favorites', function(request, response) {
 
 });
 
-app.get('/api', apiServices);
+app.use('/api/v1', apiServices);
 
 
 

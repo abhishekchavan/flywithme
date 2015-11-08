@@ -9,4 +9,6 @@ applications:
   services:
   - flywithme-cloudantNoSQLDB
   - Personality Insights-9j
+  - Relationship Extraction-n6
+  - Insights for Weather-70
   command: node app.js

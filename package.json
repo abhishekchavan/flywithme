@@ -1,23 +1,32 @@
 {
-  "name": "cloudant_boilerplate_nodejs",
-  "version": "0.0.2",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "body-parser": "1.13.2",
-    "cloudant": "*",
-    "connect-multiparty": "1.2.5",
-    "ejs": "*",
-    "errorhandler": "1.4.1",
-    "express": "4.12.x",
-    "method-override": "2.3.3",
-    "morgan": "1.6.1",
-    "request": "^2.65.0"
-  },
-  "repository": {},
-  "engines": {
-    "node": "4.2.2"
-  }
+    "name": "cloudant_boilerplate_nodejs",
+    "version": "0.0.2",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "JSONPath": "^0.10.0",
+        "async": "^1.5.0",
+        "body-parser": "1.13.2",
+        "cfenv": "^1.0.3",
+        "cloudant": "*",
+        "config": "^1.16.0",
+        "connect-multiparty": "1.2.5",
+        "ejs": "*",
+        "errorhandler": "1.4.1",
+        "express": "4.12.x",
+        "method-override": "2.3.3",
+        "morgan": "1.6.1",
+        "querystring": "^0.2.0",
+        "connect-multiparty": "1.2.5",
+        "request": "^2.65.0",
+        "twitter": "^1.2.5",
+        "underscore": "^1.8.3",
+        "watson-developer-cloud": "^0.10.6"
+    },
+    "repository": {},
+    "engines": {
+        "node": "4.2.2"
+    }
 }
